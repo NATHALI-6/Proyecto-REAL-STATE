@@ -1,0 +1,95 @@
+CREATE DATABASE realstate;
+USE realstate;
+-- Creación de la tabla TblUsuarios
+CREATE TABLE TblUsuarios (
+    IdUsuarios INT NOT NULL,
+    Nombres VARCHAR(40) NOT NULL,
+    Correo VARCHAR(40) NOT NULL,
+    Contraseña VARCHAR(40) NOT NULL,
+    rol VARCHAR(13) NOT NULL,
+    PRIMARY KEY (IdUsuarios)
+);
+
+
+-- Creación de la tabla TBLCita
+CREATE TABLE TBLCita (
+    IdCita INT NOT NULL,
+    Dirección VARCHAR(50) NOT NULL,
+    Fecha DATE NOT NULL,
+    Telefono VARCHAR(12),
+    codigoc INT NOT NULL,
+    infoinmueble VARCHAR(50) NOT NULL,
+    PRIMARY KEY (IdCita)
+);
+
+
+-- Creación de la tabla TBLAdministrador
+CREATE TABLE TBLAdministrador (
+    Cedula INT NOT NULL,
+    Nombres VARCHAR(40) NOT NULL,
+    Correo VARCHAR(40) NOT NULL,
+    Contraseña VARCHAR(40),
+    PRIMARY KEY (Cedula)
+);
+
+
+-- Creación de la tabla TBLInmueble
+CREATE TABLE TBLInmueble (
+    IdInmueble INT NOT NULL,
+    Imagen VARCHAR(255) DEFAULT 'ruta/por/defecto/default.jpg',
+    Precio VARCHAR(200) NOT NULL,
+    Localidad VARCHAR(10) NOT NULL,
+    Dirección VARCHAR(50) NOT NULL,
+    Estrato INT NOT NULL,
+    Area_construida VARCHAR(20) NOT NULL,
+    NumeroPisos INT,
+    Habitaciones INT,
+    Baños INT,
+    Cocina INT,
+    Garaje VARCHAR(10) NOT NULL,
+    Patio VARCHAR(10) NOT NULL,
+    Estudio VARCHAR(10) NOT NULL;
+    Contacto VARCHAR(50) NOT NULL,
+    codigoc INT NOT NULL,
+    PRIMARY KEY (IdInmueble)
+);
+
+
+
+-- Creación de la tabla TBLCategoria
+CREATE TABLE TBLCategoria (
+    IdCategoria INT NOT NULL,
+    Nombres VARCHAR(40) NOT NULL,
+    PRIMARY KEY (IdCategoria)
+);
+INSERT INTO TBLCategoria (IdCategoria, Nombres) VALUES
+    (1, 'Casa'),
+    (2, 'Apartamento'),
+    (3, 'Lote'),
+    (4, 'Finca'),
+    (5, 'Bodega');
+
+
+select * from TBLCita ;
+
+INSERT INTO `tblusuarios` (`IdUsuarios`, `Nombres`, `Correo`, `Contraseña`, `rol`) VALUES
+(0, 'cristiano ', 'Quecosa@gmail.com', '123456', 'administrador'),
+(1, 'juanchi', 'siuu14@gmail.com', '123456', 'administrador'),
+(2, 'rin', 'sae14@gmail.com', '1122333', 'usuario'),
+(3, 'cloy', 'supapalon@gmail.com', '45678', 'usuario'),
+(4, 'quiño', 'papique@gmail.com', '89498949', 'usuario'),
+(65, 'sae', 'itoshi14@gmail.com', '8945623', 'administrador'),
+(657, 'messi', 'todoregalodoporlafifa@gmail.com', '26+5296', 'usuario'),
+(212900, 'cloy', 'cloysendokai@gmail.com', '4444', 'usuario'),
+(692702, 'cloy', 'cloysendokai@gmail.com', '4444', 'usuario'),
+(990396, 'yoka', 'messironaldo@gmail.com', '156561256', 'usuario'),
+(2147483647, 'ZAK', 'Quecosazorn@gmail.com', '45689', 'usuario');
+
+
+
+CREATE TABLE imagenesinmuebles (
+    IdImagen INT AUTO_INCREMENT PRIMARY KEY,
+    RutaImagen VARCHAR(255) NOT NULL,
+    IdInmueble INT,
+    FOREIGN KEY (IdInmueble) REFERENCES TBLInmueble(IdInmueble)
+);

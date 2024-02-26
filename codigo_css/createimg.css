@@ -1,0 +1,47 @@
+/* estilos de la creacion del inmueble de create.php */
+.image-preview div {
+    width: 100px;  /* Ancho fijo para todas las imágenes */
+    height: 100px;  /* Alto fijo para todas las imágenes */
+    margin: 5px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;  /* Asegura que cualquier parte de la imagen que exceda el tamaño del contenedor sea ocultada */
+    border: 1px solid #ddd;  /* Opcional: añade un borde alrededor de las imágenes para mejorar la estética */
+    border-radius: 10px;  /* Redondea las esquinas del contenedor de la imagen */
+  }
+  
+  .image-preview img {
+    width: 100%;  /* Asegura que la imagen cubra el ancho del contenedor */
+    height: 100%;  /* Asegura que la imagen cubra el alto del contenedor */
+    object-fit: cover;  /* Asegura que la imagen se recorte para cubrir el espacio disponible, manteniendo su aspecto */
+    border-radius: 10px;  /* Redondea las esquinas de las imágenes */
+    transition: opacity 0.3s ease;  /* Suaviza la transición de la opacidad */
+  }
+  
+  .image-preview img:hover {
+    opacity: 0.6;  /* Cambia la opacidad de la imagen al pasar el mouse */
+  }
+  
+  .delete-btn {
+    position: absolute;
+    top: 0px; /* Posiciona la X dentro del contenedor, ajusta según necesidad */
+    right: 0px; /* Posiciona la X dentro del contenedor, ajusta según necesidad */
+    width: 15px; /* Hace la X más pequeña */
+    height: 15px; /* Hace la X más pequeña */
+    border-radius: 50%;
+    border: none;
+    background-color: #ff0000; /* Color de fondo inicial */
+    color: white; /* Color del texto inicial */
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Suaviza la transición del color de fondo y transform */
+  }
+  
+  .delete-btn:hover {
+    background-color: #cc0000; /* Oscurece el color de fondo al pasar el mouse */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+  }

@@ -1,0 +1,53 @@
+/*SECCION DE ALZATE ANDRES*/
+
+
+
+
+
+/*Seccion informacion de inmueble*/
+.columna {
+   text-align: center;
+    
+    font-size: 1.2rem;
+}
+
+.columna .bi{
+  color: rgb(45, 205, 249);
+}
+
+.infoinmu {
+    text-align: left;
+}
+
+
+/* Estilos personalizados para la interfaz del inmueble */
+
+
+/* Estilos para la caja de precios y contacto */
+.price-contact-box {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.precio {
+  color: rgb(45, 205, 249);
+  font-family: 'Paytone One', sans-serif;
+}
+
+.valor {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ubi {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+

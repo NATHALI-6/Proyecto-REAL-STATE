@@ -1,0 +1,114 @@
+/* Estilos globales para resetear márgenes, rellenos y ajustar el modelo de caja */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Estilos para las imágenes */
+img {
+    border: 1px; /* Borde de 1 píxel */
+    border-color: black;
+    max-width: 36%; /* Ancho máximo del 36% */
+    height: auto; /* Altura automática */
+    display: block; /* Convertir la imagen en bloque */
+    margin: 0 auto; /* Centrar horizontalmente */
+    border-radius: 50% 5px;
+    
+}
+body {
+    font-family: arial, "lato", sans-serif;
+    background-image: url('imge/imagenblanca.jpg');
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* Estilos para el contenedor principal */
+.containeri {
+    width: 590px; /* Ancho fijo */
+    height: auto; /* Altura automática */
+    background-color: rgba(233, 238, 244, 0.877);
+    position: absolute; /* Posición absoluta */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Centrar con transformación */
+    border-radius: 10px; /* Radio de borde para esquinas redondeadas */
+    box-shadow: 3px 3px 5px; /* Sombra */   
+    padding: 20px; /* Relleno interior */
+    
+}
+
+/* Estilos para el encabezado principal */
+#user-men {
+    font-size: 2.5rem; /* Tamaño de fuente */
+    margin: 10px auto; /* Centrar horizontalmente */
+    color: rgb(58, 58, 601); /* Color de texto */
+}
+/* estilo de boton */
+.boton{
+    width: 30%;
+    background-image: linear-gradient(to left, rgb(95, 95, 244), rgb(51, 210, 242)); /* Gradiente de fondo */
+}
+
+/* Estilos para el título de bienvenida */
+.welcome-heading {
+    font-size: 1.1rem; /* Tamaño de fuente */
+    text-align: center; /* Alinear al centro */
+    text-transform: capitalize; /* Transformar en mayúsculas */
+    color: rgb(91, 129, 241); /* Color de texto */
+}
+
+/* Estilos para los encabezados secundarios */
+.dkp-heading {
+    text-transform: uppercase; /* Transformar en mayúsculas */
+}
+
+/* Estilos para el contenedor de las casillas de entrada */
+.input-container {
+    text-align: center; /* Alinear al centro */
+    margin-bottom: 20px; /* Espacio debajo del contenedor */
+}
+
+/* Estilos para las casillas de entrada */
+.input-box {
+    width: 100%; /* Ancho completo */
+    max-width: 520px; /* Ancho máximo */
+    height: 30px; /* Altura */
+    margin-bottom: 10px; /* Espacio entre las casillas */
+    border-radius: 4px; /* Bordes redondeados */
+    outline: none; /* Sin contorno al recibir foco */
+    border: none; /* Sin borde */
+  
+    padding-left: 10px; /* Relleno izquierdo */
+}
+
+/* Estilos para el botón de inicio de sesión */
+.login-btn {
+    display: block; /* Convertir en bloque */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 8px 92px; /* Relleno */
+    background-image: linear-gradient(to left, rgb(95, 95, 244), rgb(51, 210, 242)); /* Gradiente de fondo */
+    border-radius: 40px; /* Bordes redondeados */
+    text-decoration: none; /* Sin decoración de texto */
+    color: #001bb3; /* Color de texto */
+    text-transform: capitalize; /* Transformar en mayúsculas */
+}
+
+/* Estilos para el enlace de recuperar contraseña */
+.forget-password {
+    text-align: center; /* Alinear al centro */
+    margin-top: 20px; /* Espacio arriba */
+    font-weight: bold; /* Negrita */
+}
+
+/* Estilos para el enlace de registro */
+.register-now {
+    text-align: center; /* Alinear al centro */
+    margin-top: 20px; /* Espacio arriba */
+    font-weight: bold; /* Negrita */
+    text-decoration: none; /* Sin decoración de texto */
+}

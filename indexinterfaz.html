@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+
+    <!--Metadatos-->
+    <meta charset="UTF-8">
+    <meta name="author" content="Alzate Andres">
+    <meta name="description" content="Pagina consulta de inmobiliarias j.f">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Titulo-->
+    <title>Seccion Inmuebles</title>
+
+    <!--Favicon (icono)-->
+    <link rel="icon" type="image/x-icon" href="img/LOGO JF.png">
+
+    <!--Link Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--Iconos de Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!--CSS-->
+    <link href="../login/codigo_css/styleinterfaz.css" rel="stylesheet">
+
+    <!--Fonts (Fuentes de letras)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Paytone+One&display=swap" rel="stylesheet">
+  
+  </head>
+
+<body>
+
+  <!--Barra de navegacion-->
+  <nav class="navbar navbar-expand-md bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#"><img src="imginterfaz/LOGO JF.png" width="50" alt="Logo de la pagina web">Inmobiliaria
+          J.F</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#descripcion">Descripcion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#inmuebles">Inmuebles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonios">Testimonios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<!-- Contenedor principal -->
+<div class="container mt-4">
+  <div class="row">
+
+      <!-- Título y Subtítulo -->
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="tit">Apartamento en Arriendo</h1>
+      <p>Ubicación Principal Ciudad Principal
+        <br>
+        Ubicaciones Asociadas: Barrio A, Barrio B, Barrio C
+      </p>
+    </div>
+  </div>
+
+  <!-- Slider de Imágenes -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" aria-label="Slide 12"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12" aria-label="Slide 13"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13" aria-label="Slide 14"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="14" aria-label="Slide 15"></button>
+    </div>
+
+    <!-- Inmueble 1 -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imginterfaz/1.png" class="d-block w-100" alt="inmueble 1">
+      </div>
+
+    <!-- Inmueble 2 -->
+      <div class="carousel-item">
+        <img src="imginterfaz/2.png" class="d-block w-100" alt="inmueble 2">
+      </div>
+
+    <!-- Inmueble 3 -->
+      <div class="carousel-item">
+        <img src="imginterfaz/3.png" class="d-block w-100" alt="inmueble 3">
+      </div>
+
+    <!-- Inmueble 4 -->
+      <div class="carousel-item">
+        <img src="imginterfaz/4.png" class="d-block w-100" alt="inmueble 4">
+      </div>
+
+    <!-- Inmueble 5 -->
+      <div class="carousel-item">
+        <img src="imginterfaz/5.png" class="d-block w-100" alt="inmueble 5">
+      </div>
+
+    <!-- Inmueble 6 -->
+      <div class="carousel-item">
+        <img src="imginterfaz/6.png" class="d-block w-100" alt="inmueble 6">
+      </div>
+
+    <!-- Inmueble 7 -->
+      <div class="carousel-item">
+        <img src="imginterfaz/7.png" class="d-block w-100" alt="inmueble 7">
+      </div>
+
+    <!-- Inmueble 8 -->
+      <div class="carousel-item">
+        <img src="imginterfaz/8.png" class="d-block w-100" alt="inmueble 8">
+      </div>
+
+    <!-- Inmueble 9 -->
+      <div class="carousel-item">
+        <img src="imginterfaz/9.png" class="d-block w-100" alt="inmueble 9">
+      </div>
+
+    <!-- Inmueble 10 -->
+      <div class="carousel-item">
+        <img src="imginterfaz/10.png" class="d-block w-100" alt="inmueble 10">
+      </div>
+
+    <!-- Inmueble 11 -->
+      <div class="carousel-item">
+        <img src="imginterfaz/11.png" class="d-block w-100" alt="inmueble 11">
+      </div>
+
+    <!-- Inmueble 12 -->
+      <div class="carousel-item">
+        <img src="imginterfaz/12.png" class="d-block w-100" alt="inmueble 12">
+      </div>
+
+    <!-- Inmueble 13 -->
+      <div class="carousel-item">
+        <img src="imginterfaz/13.png" class="d-block w-100" alt="inmueble 13">
+      </div>
+
+    <!-- Inmueble 14 -->
+      <div class="carousel-item">
+        <img src="imginterfaz/14.png" class="d-block w-100" alt="inmueble 14">
+      </div>
+
+    <!-- Inmueble 15 -->
+      <div class="carousel-item">
+        <img src="imginterfaz/15.png" class="d-block w-100" alt="inmueble 15">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Descripción del Inmueble -->
+  <div class="mt-4">
+    <h3>Descripción del Inmueble</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro consectetur, explicabo nam nostrum cumque sed, pariatur enim quasi accusamus, rerum adipisci doloribus ullam possimus voluptatem iusto vitae ipsum sequi animi!
+    Itaque dicta expedita eligendi deleniti. Rerum numquam odio eaque ad, voluptas cumque reiciendis quae incidunt eveniet repellat pariatur odit sed rem facere non dolorem laudantium quasi enim, ab nemo dolore!
+    Aut, voluptates repudiandae nesciunt distinctio dicta porro aperiam iure sint ab delectus  ipsum harum aperiam cum praesentium quidem magni magnam.</p>
+  </div>
+  <br>
+
+ <!-- Información sobre el Inmueble en Cuadros -->
+<div class="columna row mt-12">
+
+  <h3 class="infoinmu"> Caracteristicas </h3>
+    <div class="col-lg-6">
+      <br>
+      <div class="row">
+        
+        <div class="columna col-lg-4">
+          <div class="property-info-box">
+            <i class="bi bi-stack"></i>
+            <p>Estrato:  </p>
+          </div>
+        </div>
+
+        <div class="columna col-lg-4">
+          <div class="property-info-box">
+            <i class="bi bi-rulers"></i>
+            <p>Area construida:  </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="property-info-box">
+            <i class="bi bi-house-fill"></i>
+            <p>Pisos:  </p>
+          </div>
+          <br><br>
+        </div>
+
+        <div class="columna col-lg-4">
+          <div class="property-info-box">
+            <i class="bi bi-droplet-half"></i>
+            <p>Baños:  </p>
+          </div>
+        </div>
+
+        <div class="columna col-lg-4">
+          <div class="property-info-box">
+            <i class="bi bi-house-fill"></i>
+            <p>Habitaciones:  </p>
+          </div>
+        </div>
+
+        <div class="columna col-lg-4">
+          <div class="property-info-box">
+            <i class="bi bi-cookie"></i>
+            <p>Cocina:  </p>
+          </div>
+          <br><br>
+        </div>
+
+        <div class="columna col-lg-4">
+          <div class="property-info-box">
+            <i class="bi bi-car-front-fill"></i>
+            <p>Garaje:  </p>
+          </div>
+        </div>
+
+        <div class="columna col-lg-4">
+          <div class="property-info-box">
+            <i class="bi bi-house-fill"></i>
+            <p>Patio:  </p>
+          </div>
+        </div>
+
+        <div class="columna col-lg-4">
+          <div class="property-info-box">
+            <i class="bi bi-house-fill"></i>
+            <p>Estudio:  </p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- Cuadro de Precio e Información de Contacto -->
+    <div class="pre col-lg-6">
+      <div class="price-contact-box">
+
+        <h2 class="precio">Precio del Inmueble</h2>
+        <p class="ubi">Desde (COP)</p>
+        <h2 class="valor"> $ 341.730.900 </h2>
+        <p class="ubi">Hasta (COP)</p>
+        <h2 class="valor"> $ 437.095.308 </h2>
+        <br>
+        
+        <h2 class="precio">Forma de contacto</h2>
+        <p> Correo nombre@dominio.com </p>
+        <p> Teléfono (123) 456-7890 </p>
+        <br>
+        <p class="ubi">consulta con un acesor y nuestras redes abajo</p>
+      
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+     <!-- Ubicación -->
+     <div class=" row mt-4">
+
+      <div class="col-lg-8">
+        <div class="row">
+      <h2>Ubicacion</h2>
+      <img class="ubimagen" src="img/ubiejemplo.png" alt="Ubicación por Sector" class="img-fluid">
+
+      <!-- Direccion y barrio -->
+      <div class="columna col-lg-5">
+        <br>
+        <div class="property-info-box">
+          <i class="bi bi-stack"></i>
+          <p class="ubi">Direccion</p>
+          <p>Colombia, Bogota</p>
+        </div>
+      </div>
+
+      <div class="columna col-lg-7">
+        <br>
+        <div class="property-info-box">
+          <i class="bi bi-stack"></i>
+          <p class="ubi">Barrio</p>
+          <p>Paloquemado</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+  <br><br><br><br><br><br><br><br>
+
+<!-- Seccion de Contacto -->
+<section id="contacto" class="contacto seccion-oscura">
+  <div class="container">
+    <div class="container text-center rectangulo d-flex justify-content-evenly">
+      <div class="row">
+        <div class="col-12 col-md-4 seccion-titulo">
+          ¡Hablemos!
+        </div>
+        <div class="col-12 col-md-4 descripcion">
+          Contáctame para iniciar tu proceso de conseguir el inmueble de tus sueños.
+        </div>
+        <div class="col-12 col-md-4">
+          <a href="mailto:alzateandres799@gmail.com">
+            <button type="button">  
+              Contacto
+              <i class="bi bi-envelope-check-fill"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Pie de pagina (footer) -->
+ <footer class="cont seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+  <img class="footer-logo" src="img/LOGO JF.png" alt="Logo del portafolio">
+  <p class="footer-texto text-center"> Encuentra tu hogar ideal <br> Nosotros hacemos realidad tus sueños inmobiliarios </p>
+  <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-twitter"></i>
+    </a>
+    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-linkedin"></i>
+    </a>
+    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-instagram"></i>
+    </a>
+    <a href="mailto:alzateandres799@gmail.com" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-envelope"></i>
+    </a>
+  </div>
+  <div class="derechos-de-autor"> Real State (2024) &#169;</div>
+</footer>
+
+<!-- Enlaces a Bootstrap JS y jQuery (asegúrate de incluir jQuery antes que Bootstrap JS) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+</html>
+
+

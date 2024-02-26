@@ -1,0 +1,74 @@
+/* Resetear márgenes y padding y establecer el box-sizing a border-box */
+body, h1, h2, h3, p, ul, li, form, input, select, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos generales del body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* Estilos del contenedor principal */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos del encabezado */
+  header {
+    background-color: #ffffff;
+    color: #6b6969;
+    text-align: center;
+  }
+  
+  /* ESTILOS GENERALES  */
+  .tipo-letra{
+    font-family: 'Mina', sans-serif;
+  } 
+  
+  /* Estilos de la barra de navegación */
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  /* Estilos de la marca de la inmobiliaria en la barra de navegación */
+  .navbar-brand span {
+    font-family: 'Lilita One', sans-serif;
+    font-size: 30px;
+    margin-left: 5rem;
+    color: rgb(45, 205, 249);
+  }
+  
+  /* Estilos de la sección de búsqueda de propiedades */
+  .search {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  } 
+  
+  
+  .custom-form-group {
+    display: flex;
+    margin-bottom: 15px; /* Puedes ajustar el valor según tus necesidades */
+  }
+  
+  .custom-form-group .form-control {
+    flex: 1;
+    margin-right: 10px; /* Puedes ajustar el valor según tus necesidades */
+  }
+  
+  .custom-form-group .btn {
+    width: 100px; /* Ajusta el valor según tus necesidades */
+  }
+  

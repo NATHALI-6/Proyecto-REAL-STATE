@@ -1,0 +1,62 @@
+CREATE DATABASE realstate;
+USE realstate;
+
+-- Creación de la tabla TblUsuarios
+CREATE TABLE TblUsuarios (
+    IdUsuarios INT NOT NULL AUTO_INCREMENT,
+    Nombres VARCHAR(40) NOT NULL,
+    Apellido VARCHAR(40) NOT NULL, 
+    Telefono VARCHAR(12) NOT NULL,  
+    Correo VARCHAR(40) NOT NULL,
+    Contraseña VARCHAR(40) NOT NULL,  
+    PRIMARY KEY (IdUsuarios)
+);
+
+-- Creación de la tabla TBLCita
+CREATE TABLE TBLCita (
+    IdCita INT NOT NULL AUTO_INCREMENT,
+    Dirección VARCHAR(50) NOT NULL,
+    Fecha DATE NOT NULL,
+    Telefono VARCHAR(12),
+    codigoc INT NOT NULL,
+    infoinmueble VARCHAR(50) NOT NULL,
+    PRIMARY KEY (IdCita)
+);
+
+-- Creación de la tabla TBLAdministrador
+CREATE TABLE TBLAdministrador (
+    Cedula INT NOT NULL AUTO_INCREMENT,
+    Nombres VARCHAR(40) NOT NULL,
+    Correo VARCHAR(40) NOT NULL,
+    Contraseña VARCHAR(40) NOT NULL,  -- Cambiamos a NOT NULL
+    PRIMARY KEY (Cedula)
+);
+
+-- Creación de la tabla TBLInmueble
+CREATE TABLE TBLInmueble (
+    IdInmueble INT NOT NULL AUTO_INCREMENT,
+    Localidad VARCHAR(10) NOT NULL,
+    Dirección VARCHAR(50) NOT NULL,
+    Estrato INT NOT NULL,
+    Area_construida VARCHAR(20) NOT NULL,
+    NumeroPisos INT,
+    Habitaciones INT,
+    Baños INT,
+    Contacto VARCHAR(50) NOT NULL,
+    codigoc INT NOT NULL,
+    PRIMARY KEY (IdInmueble)
+);
+
+-- Creación de la tabla TBLCategoria
+CREATE TABLE TBLCategoria (
+    IdCategoria INT NOT NULL AUTO_INCREMENT,
+    Nombres VARCHAR(40) NOT NULL,
+    PRIMARY KEY (IdCategoria)
+);
+
+INSERT INTO TBLCategoria (Nombres) VALUES
+    ('Casa'),
+    ('Apartamento'),
+    ('Lote'),
+    ('Finca'),
+    ('Bodega');

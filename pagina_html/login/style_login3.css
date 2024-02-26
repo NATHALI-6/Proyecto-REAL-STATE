@@ -1,0 +1,77 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para imágenes */
+img {
+    border: 1px; /* Grosor del borde de la imagen */
+    border-radius: 1px; /* Radio de borde para esquinas redondeadas */
+    max-width: 50%; /* Establece el ancho máximo de la imagen */
+    height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    border-radius: 50% 5px;
+}
+
+body {
+    font-family: arial, "lato", sans-serif;
+    background-image: url('imge/imagenblanca.jpg');
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilos para el contenedor principal */
+.containero {
+    width: 300px; /* Ancho del contenedor */
+    height: 590px; /* Altura del contenedor */
+    background-color: rgba(233, 238, 244, 0.877);
+    position: absolute; /* Posicionamiento absoluto */
+    top: 50%; /* Coloca el contenedor en la mitad superior del viewport */
+    left: 50%; /* Coloca el contenedor en la mitad izquierda del viewport */
+    transform: translate(-50%, -50%); /* Centra el contenedor horizontal y verticalmente */
+    border-radius: 10px; /* Radio de borde para esquinas redondeadas */
+    box-shadow: 3px 3px 5px; /* Sombra */
+}
+
+/* Estilos para el título */
+.welcome-heading {
+    font-size: 1.1rem; /* Tamaño del texto */
+    text-align: center; /* Alineación del texto al centro */
+    text-transform: capitalize; /* Transforma el texto a mayúsculas */
+    color: rgb(46, 78, 219); /* Color del texto */
+}
+
+/* Estilos para las casillas de entrada */
+.input-box,
+.input-box1 {
+    width: 220px; /* Ancho de las casillas de entrada */
+    height: 30px; /* Altura de las casillas de entrada */
+    margin: 10px auto; /* Centra horizontalmente las casillas de entrada */
+    border-radius: 3px; /* Radio de borde para esquinas redondeadas */
+    outline: none; /* Elimina el contorno */
+    border: none; /* Elimina el borde */
+    padding-left: 10px; /* Espacio interior a la izquierda */
+}
+
+/* Estilos para el contenedor de los elementos de entrada */
+.input-container {
+    text-align: center; /* Centra horizontalmente el contenido del contenedor */
+}
+
+/* Estilos para los botones y enlaces */
+.login-btn,
+.forget-password {
+    display: inline-block; /* Establece los elementos como bloques en línea */
+    margin: 10px; /* Agrega espacio entre los elementos */
+    border-radius: 6px;
+}
+
+.boton{
+    width: 73%;
+    background-image: linear-gradient(to left, rgb(95, 95, 244), rgb(51, 210, 242)); /* Gradiente de fondo */
+}
